@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TileNumberConverter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TileNumberConverter",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

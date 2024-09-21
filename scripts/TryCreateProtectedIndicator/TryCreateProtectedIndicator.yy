@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TryCreateProtectedIndicator",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TryCreateProtectedIndicator",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

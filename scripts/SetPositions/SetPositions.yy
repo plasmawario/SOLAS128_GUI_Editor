@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SetPositions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SetPositions",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

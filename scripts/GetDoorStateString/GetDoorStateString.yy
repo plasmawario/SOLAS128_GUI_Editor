@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GetDoorStateString",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetDoorStateString",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
