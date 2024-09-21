@@ -1,0 +1,19 @@
+# Lines should be formatted like below
+# roomx, roomy, x, y = tile params (see below)
+# roomx and roomy select the room to modify, both are 0 indexed from the top left
+# x and y select a tile in the selected room, also 0 indexed from the top left
+# Left mirrors are rotated like \
+# Up mirrors are rotated like /
+# Left prisms are horizontal
+# Up prisms are diagonal
+# Arguments for mirrors: roomx, roomy, x, y = mirror dir moveable rotateable flips
+# Arguments for prisms: roomx, roomy, x, y = prism dir moveable rotateable
+# Arguments for emitters: roomx, roomy, x, y = emitter dir color
+# Arguments for filters: roomx, roomy, x, y = filter color
+# Arguments for buttons: roomx, roomy, x, y = button type
+# Arguments for doors: roomx, roomy, x, y = door type state
+# For receivers the color argument can be replaced with "any" to allow any color
+# For emitters the coloe "void" refers the the x sigil
+# Valid tiles: mirror, prism, emitter, receiver, noplace, outofbounds, wall, default, corner, blocker, door, button, filter, glitchdestroyer, glitch, teleport, and empty
+# Setting a tile to default resets it to its vanilla state
+# A hyphen can be used in the tile coordinates to select inclusive ranges

@@ -1,0 +1,23 @@
+game dimensions - 18x18 rooms
+room dimensions - 15x15 tiles
+tile dimensions - 32x32 pixels
+
+====================SPRITES====================
+blocker
+	
+filter
+	
+glitchdestroyer
+	
+walls
+	
+====================OBJECTS====================
+	
+glitchdestroyer
+	
+filter
+		
+misc tiles to place
+	default
+	corner
+	empty
