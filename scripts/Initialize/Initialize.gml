@@ -49,7 +49,7 @@ globalvar library; library = [
 	{data: obj_tilePrism, name: "prism"}, 
 	{data: obj_tileEmitter, name: "emitter"}, 
 	{data: obj_tileReceiver, name: "receiver"}, 
-	{data: obj_tileTeleporter, name: "teleport"}, 
+	{data: obj_tileTeleporter, name: "teleporter"}, 
 	{data: obj_tileDoor, name: "door"}, 
 	{data: obj_tileButton, name: "button"}, 
 	{data: obj_tileWall, name: "wall"}, 

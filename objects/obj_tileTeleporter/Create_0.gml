@@ -3,7 +3,7 @@
 event_inherited();
 
 //object properties
-name = "teleport";
+name = "teleporter";
 channel = 0;
 
 //change properties

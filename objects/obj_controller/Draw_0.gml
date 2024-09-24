@@ -112,6 +112,7 @@ draw_text(camera.x, roomYViewStart - 32, $"room: ({roomX}, {roomY})  tile: ({mou
 
 draw_set_halign(fa_left);
 
+//controls
 draw_sprite(spr_Arrowkeys, 0, camera.x - 256 + 8, roomYViewEnd + 32);
 draw_text(camera.x - 256 + 32, roomYViewEnd + 32, "- move between rooms");
 draw_sprite(spr_mouse, 1, camera.x - 256, roomYViewEnd + 64);
@@ -124,6 +125,14 @@ draw_sprite(spr_r_key, 0, camera.x + 256, roomYViewEnd + 32);
 draw_text(camera.x + 256 - 16, roomYViewEnd + 32, "rotate selected object - ");
 
 draw_set_valign(fa_top);
+
+//debug text
+draw_set_halign(fa_left);
+for (var i = 0; i < array_length(debugText); i ++){
+	draw_set_alpha(debugText[i].alpha);
+	draw_text_ext(camera.x - 632, camera.y - 128 + (64 * i), debugText[i].text, 16, 384);
+}
+draw_set_alpha(1);
 
 //draw room boundaries
 draw_rectangle_color(roomXViewStart, roomYViewStart, roomXViewEnd, roomYViewEnd, c_red, c_red, c_red, c_red, true);

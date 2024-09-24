@@ -10,6 +10,11 @@ roomYViewStart = roomY * roomTotalSize;
 roomXViewEnd = (roomX + 1) * roomTotalSize;
 roomYViewEnd = (roomY + 1) * roomTotalSize;
 
+debugInitTimer = 60 * 10;
+debugFadeTime = 60;
+debugInitAlpha = 1;
+debugText = [];
+
 //calculates the shared tile offset for when we navigate rooms, since each room shares the outer-most
 //tiles. This helps fix that
 var poopfartnutsX = mouse_x - (roomX * (roomTotalSize - TILE_SIZE));
@@ -29,3 +34,18 @@ objectLibrarySelectedIndex = -1;
 objectSelectedColor = make_color_rgb(255, 245, 170);
 camera.x = (roomX * roomTotalSize) + (roomTotalSize / 2);
 camera.y = (roomY * roomTotalSize) + (roomTotalSize / 2);
+
+//debug setting-up
+function AddDebugText(newText){
+	//create a new debug text struct
+	var debugTextObj = {
+		text: newText,
+		timer: debugInitTimer,
+		alpha: debugInitAlpha
+	};
+	
+	//push it into the debug text array
+	array_push(debugText, debugTextObj);
+}
+
+AddDebugText("debug text will go here");

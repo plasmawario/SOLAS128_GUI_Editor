@@ -133,3 +133,18 @@ if (mouse_check_button(mb_right) && position_meeting(mouse_x, mouse_y, obj_tileP
 		show_debug_message($"cannot delete protected tile: {inst.name}");
 	}
 }
+
+//do debug text timer stuff
+for (var i = 0; i < array_length(debugText); i ++){
+	
+	//update timer and alpha of debug text
+	debugText[i].timer = clamp(debugText[i].timer - 1, 0, 99999);
+	if (debugText[i].timer < debugFadeTime) {
+		debugText[i].alpha = clamp(debugText[i].alpha - 1 / (debugFadeTime), 0, 1);
+	}
+	
+	//if alpha of a text is 0, remove it from the array
+	if (debugText[i].alpha <= 0){
+		array_delete(debugText, i, 1);
+	}
+}
